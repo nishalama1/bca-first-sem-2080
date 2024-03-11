@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%; 
+    height: auto;
+}
+
+/* Header */
+header .logo img{
+    width: 150px;
+    height: auto; /*(to match with width image ko case ma height nai dinxa praye)*/
+}
+.bottom-header{
+    display: flex;
+    justify-content: space-around;
+    background: #010596;
+    color: #ffffff;
+    /* padding: 15px; */
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+/* header ma matra problem vayera header ma a tag garera color deko cause aru components ma color arkai huna sakxa */
+.bottom-header a{
+    /* we have to use display blck or inline in achor tag */
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+}
+.bottom-header a:hover{
+    background: red;
+}
+.bottom-header .others-feature{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    /* gap: 10px;  gap use gardainam kina vane some copanies wont like that and so gap is not necessary*/
+    list-style: none;
+}
+/* to pick the color as you need visit web and chose any color and pick color picker and tthen take magnifier to which color you need */
+.scroll-top{
+    /* this is out of anyone mean this is not child of child */
+    color: green;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    background-color: green;
+    width: 30px;           
+    /* to make full circle we have to keep same height and width*/
+    height: 30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* first top left bottom right for 2 'px' */
+    border-radius: 20px;
+}
+.scroll-top:hover{
+    background: rgb(48, 142, 48);
+    box-shadow: 0px 0px 5px 0px #000;
+}
+
+section{
+    padding:30px;
+}
+.news-component{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+}
+.news-detail{
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 18px 0px #000;
+}
